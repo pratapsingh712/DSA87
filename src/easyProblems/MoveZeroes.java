@@ -9,16 +9,16 @@ public class MoveZeroes {
         int[] nums = {0,1,0,3,12,0,0,2,4};
 
         int pointerZero = 0;
-        int i=0;
+        int nonZero=0;
 
-        while(i<nums.length){
-            if(nums[pointerZero]==0 && nums[i]!=0){
+        while(nonZero<nums.length){
+            if(nums[pointerZero]==0 && nums[nonZero]!=0){
                 int temp = nums[pointerZero];
-                nums[pointerZero] = nums[i];
-                nums[i] = temp;
+                nums[pointerZero] = nums[nonZero];
+                nums[nonZero] = temp;
                 pointerZero++;
             }
-            i++;
+            nonZero++;
         }
 
         System.out.println(Arrays.toString(nums));
