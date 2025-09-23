@@ -1,18 +1,5 @@
 package easyProblems;
 
-
-class Node {
-    int data;
-    Node left, right;
-
-    Node(int x) {
-        data = x;
-        left = null;
-        right = null;
-    }
-}
-
-
 public class DiameterOfBinaryTree {
 
     public static void main(String[] args) {
