@@ -1,15 +1,13 @@
 package easyProblems;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 public class MajorityElement {
     public static void main(String[] args) {
         /*
         I need to get the element that is appearing more tha half the length of array
          */
-        int numbs[] = {2,2,1,1,1,1,1,1,2,2,2,2,1,2,2};
+        int[] numbs = {2,2,1,1,1,1,1,1,2,2,2,2,1,2,2};
 
         int appearedMoreThanNByTwo = numbs.length/2;
 
