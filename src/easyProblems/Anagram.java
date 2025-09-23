@@ -1,4 +1,7 @@
-package easyProblems.linkedList;
+package easyProblems;
+
+import java.io.CharArrayReader;
+import java.util.Arrays;
 
 public class Anagram {
 
@@ -17,15 +20,17 @@ public class Anagram {
 
         char[] charArray = s.toCharArray();
 
-        for(int i=0;i<charArray.length;i++){
-            for(int j=i+1;j<charArray.length;j++){
-                if(charArray[i]>charArray[j]){
-                    char temp = charArray[i];
-                    charArray[i] = charArray[j];
-                    charArray[j] =  temp;
-                }
-            }
-        }
+//        for(int i=0;i<charArray.length;i++){
+//            for(int j=i+1;j<charArray.length;j++){
+//                if(charArray[i]>charArray[j]){
+//                    char temp = charArray[i];
+//                    charArray[i] = charArray[j];
+//                    charArray[j] =  temp;
+//                }
+//            }
+//        }
+
+        Arrays.sort(charArray);
 
         return new String(charArray);
     }
